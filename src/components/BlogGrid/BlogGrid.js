@@ -17,12 +17,7 @@ const BlogGrid = ({data}) => {
               <li key={node.id} className={styles.listItem}>
                 <Link to={slug}>
                   <div className={styles.listContent}>
-                    {
-                      node.frontmatter.image ?
-                        <img src={node.frontmatter.image.childImageSharp.resize.src}></img>
-                      : null
-                    }
-                    <p>{node.frontmatter.description}</p>
+                    <h4>{node.frontmatter.title}</h4>
                   </div>
                 </Link>
               </li>

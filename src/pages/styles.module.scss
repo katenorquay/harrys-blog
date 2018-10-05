@@ -8,20 +8,22 @@
   margin: 2rem auto;
 }
 
-.infoBanner {
-  width: 75%;
-  margin: 2rem auto 3rem auto;
-  h1 { font-size: 45px;}
-  p {
-    text-align: center;
-    font-size: 18px;
-    line-height: 30px;
-  }
+.bannerContainer {
+  position: relative;
+  text-align: center;
+  img {margin: 0;}
 }
 
-.bannerImage {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 1.45rem;
+.infoBanner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  h1 { font-size: 60px; color: white;}
+}
+
+@media (max-width: 750px) {
+  .infoBanner {
+    h1 {font-size: 40px;}
+  }
 }

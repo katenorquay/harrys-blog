@@ -13,3 +13,10 @@
   text-transform: uppercase;
   color: #333333;
 }
+
+@media (max-width: 750px) {
+  .footer {
+    position: fixed;
+    bottom: 0;
+  }
+}

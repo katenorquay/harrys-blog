@@ -1,7 +1,3 @@
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-});
-
 module.exports = {
   siteMetadata: {
     title: '',
@@ -21,18 +17,10 @@ module.exports = {
     },
     `gatsby-transformer-json`,
     {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: process.env.TRACKING_ID,
-        head: false,
-        respectDNT: true,
-      },
-    },
-    {
      resolve: `gatsby-plugin-google-fonts`,
      options: {
        fonts: [
-         `roboto`,
+         `roboto`, // You can update this with any of the fonts you find on google
          `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
        ]
      }
